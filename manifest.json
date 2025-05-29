@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "SEI para Word",
+  "version": "1.0",
+  "description": "Extensão para converter documentos internos do SEI em formato Word.",
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://sei.pr.gov.br/*",
+    "*://sei.caupr.gov.br/*",
+    "*://sei.caubr.gov.br/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://sei.pr.gov.br/*", "*://sei.caupr.gov.br/*", "*://sei.caubr.gov.br/*"],
+      "js": ["html-docx.min.js", "content.js"],
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icons/microsoft-word-icon.png",
+        "icons/microsoft-word-icon.svg"
+      ],
+      "matches": [
+        "*://sei.pr.gov.br/*",
+        "*://sei.caupr.gov.br/*",
+        "*://sei.caubr.gov.br/*"
+      ]
+    }
+  ]
+} 
