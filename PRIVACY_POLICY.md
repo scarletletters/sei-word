@@ -12,4 +12,4 @@ A extensão não compartilha, vende ou transfere qualquer dado do usuário para 
 Toda a manipulação de dados ocorre localmente no navegador do usuário, exclusivamente para a finalidade de exportação do documento.
 
 ## Dúvidas
-Em caso de dúvidas sobre esta política, entre em contato com o desenvolvedor ou responsável institucional. 
+Em caso de dúvidas sobre esta política, entre em contato com o desenvolvedor ou responsável institucional por meio do e-mail alessandro.junior@caupr.gov.br
